@@ -1,0 +1,9 @@
+{
+  "name": "tubulointerstitial-nephritis",
+  "version": "1.0.0",
+  "description": "Interactive teaching simulator of tubulointerstitial nephritis (acute drug-induced, chronic, analgesic, lithium, myeloma, aristolochic acid, autosomal-dominant). ES/EN.",
+  "type": "module",
+  "scripts": { "test": "node --test" },
+  "license": "MIT",
+  "author": "Feras Elhissi"
+}

@@ -1,0 +1,40 @@
+{
+  "topic": "Tubulointerstitial nephritis",
+  "system": "Renal / urinary",
+  "specialty": "Nephrology",
+  "eciModule": "III — Formación clínica humana",
+  "typicalSubjects": [
+    "Fisiopatología",
+    "Patología médica",
+    "Nefrología",
+    "Farmacología",
+    "Toxicología"
+  ],
+  "mirRelevant": true,
+  "keywords_es": [
+    "nefritis tubulointersticial aguda",
+    "NTI crónica",
+    "nefropatía por analgésicos",
+    "litio",
+    "diabetes insípida nefrogénica",
+    "riñón de mieloma",
+    "ácido aristolóquico",
+    "nefropatía de los Balcanes",
+    "uromodulina"
+  ],
+  "keywords_en": [
+    "acute interstitial nephritis",
+    "chronic tubulointerstitial nephritis",
+    "analgesic nephropathy",
+    "lithium",
+    "nephrogenic diabetes insipidus",
+    "myeloma cast nephropathy",
+    "aristolochic acid",
+    "Balkan nephropathy",
+    "uromodulin"
+  ],
+  "languages": [
+    "es",
+    "en"
+  ]
+}

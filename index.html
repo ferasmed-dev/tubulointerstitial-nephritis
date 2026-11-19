@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nefropatías tubulointersticiales: de la agresión a la fibrosis</title>
+<meta name="description" content="Simulador docente de nefropatías tubulointersticiales: NTI aguda, NTI crónica, analgésicos, litio, mieloma, ácido aristolóquico y NTI autosómica dominante.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+<header class="top">
+  <div>
+    <h1 data-i18n="title">Nefropatías tubulointersticiales: de la agresión a la fibrosis</h1>
+    <p class="sub" data-i18n="subtitle"></p>
+  </div>
+  <div class="lang" role="group" aria-label="Idioma / Language">
+    <button type="button" data-lang="es">ES</button><button type="button" data-lang="en">EN</button>
+  </div>
+</header>
+
+<nav class="tabs" role="tablist">
+  <button type="button" role="tab" data-tab="sim" data-i18n="tabs.sim"></button>
+  <button type="button" role="tab" data-tab="compare" data-i18n="tabs.compare"></button>
+  <button type="button" role="tab" data-tab="quiz" data-i18n="tabs.quiz"></button>
+</nav>
+
+<main>
+<section class="panel" data-panel="sim">
+  <div class="picker-wrap">
+    <h2 class="h" data-i18n="ui.overview"></h2>
+    <div id="picker" class="picker"></div>
+  </div>
+  <div class="grid">
+    <aside class="controls card">
+      <label class="ctl"><span data-i18n="ui.preset"></span><select id="preset"></select></label>
+      <h3 class="h" data-i18n="ui.params"></h3>
+      <div id="params"></div>
+      <h3 class="h" data-i18n="ui.treatment"></h3>
+      <div id="treat"></div>
+      <div class="transport">
+        <button type="button" id="playBtn" class="primary"></button>
+        <button type="button" id="resetBtn" data-i18n="ui.reset"></button>
+        <button type="button" id="endBtn" data-i18n="ui.end"></button>
+        <label class="speed"><span data-i18n="ui.speed"></span>
+          <select id="speed"><option value="0.5">0,5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option></select></label>
+      </div>
+      <label class="ctl"><span id="clock"></span><input type="range" id="scrub" min="0" max="1" step="0.1" value="0" aria-label="t"></label>
+    </aside>
+
+    <section class="stage card">
+      <div class="stagehead"><h2 id="entTitle"></h2><span id="badge" class="badge" hidden></span></div>
+      <p id="entWhat" class="what"></p>
+      <div id="schematic" class="schematic"></div>
+      <div id="tiles" class="tiles"></div>
+    </section>
+
+    <section class="explain card">
+      <h3 class="h" data-i18n="ui.whatHappens"></h3>
+      <ol id="steps" class="steps"></ol>
+      <h3 class="h" data-i18n="ui.log"></h3>
+      <ul id="log" class="log"></ul>
+    </section>
+  </div>
+
+  <section class="card chartsec">
+    <div class="charthead">
+      <div id="legend" class="legend"><span><i class="sw untreated"></i><span data-i18n="ui.legendUntreated"></span></span><span><i class="sw treated"></i><span data-i18n="ui.legendTreated"></span></span></div>
+      <button type="button" id="tableBtn"></button>
+    </div>
+    <div id="charts" class="charts"></div>
+  </section>
+
+  <section class="card">
+    <h3 class="h" data-i18n="ui.ref"></h3>
+    <dl id="ref" class="ref"></dl>
+    <p class="model-note"><span class="tag" data-i18n="ui.modelTag"></span> <span data-i18n="ui.modelNote"></span></p>
+  </section>
+</section>
+
+<section class="panel" data-panel="compare" hidden>
+  <p class="intro" data-i18n="ui.compareIntro"></p>
+  <div id="compare" class="cmpwrap"></div>
+</section>
+
+<section class="panel" data-panel="quiz" hidden>
+  <p class="intro" data-i18n="ui.quizIntro"></p>
+  <div id="quiz" class="card quiz"></div>
+</section>
+</main>
+
+<footer class="foot"><span data-i18n="footer"></span></footer>
+<script type="module" src="src/ui.js"></script>
+</body>
+</html>
